@@ -1,0 +1,12 @@
+# Import signing key from Google
+
+sudo rpm --import https://dl.google.com/linux/linux_signing_key.pub
+
+# Add repository:
+
+sudo zypper ar -f http://dl.google.com/linux/chrome/rpm/stable/x86_64/ google-chrome
+
+# Install Google Chrome Stable:
+
+sudo zypper in google-chrome-stable
+

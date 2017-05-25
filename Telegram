@@ -1,0 +1,12 @@
+# Execute with root:
+
+# wget "https://telegram.org/dl/desktop/linux" -O telegram.tar.xz
+# tar Jxvf telegram.tar.xz -C /opt/
+# ln -s /opt/Telegram/Telegram /usr/bin/telegram-client
+# ln -s /opt/Telegram/Updater /usr/bin/telegram-updater
+
+# Execute with your user:
+
+$ telegram-client
+$ sed -i "s/--/telegram-client/" .local/share/applications/telegramdesktop.desktop
+$ update-desktop-database $HOME/.local/share/applications/

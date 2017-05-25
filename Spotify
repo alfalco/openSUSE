@@ -1,0 +1,8 @@
+# Clone project from GitHub
+git clone https://github.com/cornguo/opensuse-spotify-installer
+
+# Enter in directory
+cd opensuse-spotify-installer
+
+# Execute install script
+./install-spotify.sh

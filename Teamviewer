@@ -1,0 +1,16 @@
+# Import key
+sudo rpm --import http://download.teamviewer.com/download/TeamViewer_Linux_PubKey.asc 
+
+# Download and Install package
+wget -c https://downloadus3.teamviewer.com/download/version_12x/teamviewer_12.0.76279.i686.rpm
+
+sudo zypper install ./teamviewer.i686.rpm
+
+# Confirm dependencies with "y"
+
+# Check service status
+systemctl status teamviewerd
+
+sudo systemctl start teamviewerd.service
+
+sudo systemctl enable teamviewerd.service

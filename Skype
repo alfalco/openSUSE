@@ -1,0 +1,8 @@
+# Add repository
+zypper ar -f https://repo.skype.com/rpm/stable skypeforlinux 
+
+# Refresh repository
+zypper ref skypeforlinux
+
+# Install package
+zypper install skypeforlinux 

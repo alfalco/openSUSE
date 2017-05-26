@@ -23,7 +23,12 @@ sudo chown -R plex:plex /var/lib/plexmediaserver
 sudo localectl set-locale LANG=en_US.UTF-8
 
 # Change ROOT_USES_LANG and RC_LC_ALL
-sudo yast2 language; Details; Locale Settings for User root; Yes; F10
+sudo yast2 language; Details; Locale Settings for User root; Yes; F10; F10
+
+or
+
+Open the Language in Yast ==> Details ==> Locale Settings for User root ==> Yes (in the drop-down box) ==> OK ==> OK
+
 sudo vi /etc/sysconfig/language and add en_US.UTF-8 to RC_LC_ALL variable
 
 # With root user

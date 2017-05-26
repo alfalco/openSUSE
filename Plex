@@ -1,13 +1,21 @@
 # Download Plex Pass rpm from https://plex.tv
 wget -c https://downloads.plex.tv/plex-media-server/1.7.1.3856-757424396/plexmediaserver-1.7.1.3856-757424396.x86_64.rpm
 
-# Prepare system to installation
+or
+
+wget -c https://downloads.plex.tv/plex-media-server/1.5.6.3790-4613ce077/plexmediaserver-1.5.6.3790-4613ce077.x86_64.rpm
+
+# Create a symbolic link required for preinstall script on rpm package
 sudo ln -s /etc/SUSE-brand /etc/SuSE-release
 
 # Import key and install packages
 sudo rpm --import https://downloads.plex.tv/plex-keys/PlexSign.key
 sudo zypper in insserv-compat
 sudo zypper in ./plexmediaserver-1.7.1.3856-757424396.x86_64.rpm
+
+or 
+
+sudo zypper in ./plexmediaserver-1.5.6.3790-4613ce077.x86_64.rpm
 
 # Adjust user group, permissions and locale before start plexmediaserver.service
 sudo useradd -G plex plex

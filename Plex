@@ -14,6 +14,12 @@ sudo useradd -G plex plex
 sudo chown -R plex:plex /var/lib/plexmediaserver
 sudo localectl set-locale LANG=en_US.UTF-8
 
+# Change ROOT_USES_LANG and RC_LC_ALL
+sudo yast2 language; Details; Locale Settings for User root; Yes; F10
+sudo vi /etc/sysconfig/language and add en_US.UTF-8 to RC_LC_ALL variable
+sudo source /etc/profile.d/lang.sh 
+or logout and login user
+
 # Start Plex and enable to autostart
 sudo systemctl start plexmediaserver.service
 sudo systemctl enable plexmediaserver.service

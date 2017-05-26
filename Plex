@@ -37,3 +37,20 @@ sudo systemctl enable plexmediaserver.service
 
 # Check status of service
 sudo systemctl status plexmediaserver.service
+
+# Create a file for SuSEFirewall2 rules
+sudo tee -a /etc/sysconfig/SuSEfirewall2.d/services/plexmedia-server <<-EOF
+## Name: Plex Media Server
+## Description: Opens ports for Plex Media Server with broadcast allowed.
+
+# space separated list of allowed TCP ports
+TCP="3005 8324 32400 32469"
+
+# space separated list of allowed UDP ports
+UDP="1900 5353 32410 32412 32413 32414"
+
+# space separated list of allowed UDP ports that accept broadcasts
+BROADCAST="1900 5353 32410 32412 32413 32414"
+EOF
+
+# Open the Firewall in Yast ==> Allowed Services ==> Service to Allow ==> Plex Media Server (in the drop-down box) + Add ==> Next ==> Finish

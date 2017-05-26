@@ -41,7 +41,7 @@ sudo systemctl status plexmediaserver.service
 # Create a file for SuSEFirewall2 rules
 sudo tee -a /etc/sysconfig/SuSEfirewall2.d/services/plexmedia-server <<-EOF
 ## Name: Plex Media Server
-## Description: Opens ports for Plex Media Server with broadcast allowed.
+## Description: Open ports for Plex Media Server with broadcast allowed.
 
 # space separated list of allowed TCP ports
 TCP="3005 8324 32400 32469"

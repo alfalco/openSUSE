@@ -58,4 +58,4 @@ UDP="1900 5353 32410 32412 32413 32414"
 BROADCAST="1900 5353 32410 32412 32413 32414"
 EOF
 
-# Open the Firewall in Yast ==> Allowed Services ==> Service to Allow ==> Plex Media Server (in the drop-down box) + Add ==> Next ==> Finish
+Open the Firewall in Yast ==> Allowed Services ==> Service to Allow ==> Plex Media Server (in the drop-down box) + Add ==> Next ==> Finish

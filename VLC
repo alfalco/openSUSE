@@ -1,11 +1,11 @@
 # Add repository
-zypper ar -f http://download.videolan.org/pub/vlc/SuSE/Tumbleweed/ VLC
+sudo zypper ar -f http://download.videolan.org/pub/vlc/SuSE/Tumbleweed/ VLC
 
 # Sync repository
-zypper ref VLC
+sudo zypper ref VLC
 
 # Dist-Upgrade from VLC
-zypper dup --from VLC
+sudo zypper dup --from VLC
 
 # Install player and dependencies
-zypper in vlc vlc-codecs
+sudo zypper in vlc vlc-codecs

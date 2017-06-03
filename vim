@@ -1,5 +1,7 @@
 # Add to /etc/vimrc
 
+sudo vi /etc/vimrc
+
 " enable dark background
 set background=dark
 

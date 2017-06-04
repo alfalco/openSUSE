@@ -46,5 +46,22 @@ sudo systemctl enable unifi.service
 # Reload systemctl
 sudo systemctl daemon-reload
 
+# Create a file for SuSEFirewall2 rules
+sudo tee -a /etc/sysconfig/SuSEfirewall2.d/services/unifi <<-EOF
+## Name: Unifi Controller
+## Description: Open ports for Unifi Controller with broadcast allowed.
+
+# space separated list of allowed TCP ports
+TCP="8080 8443 8080 8843"
+
+# space separated list of allowed UDP ports
+UDP="3478 10001"
+
+# space separated list of allowed UDP ports that accept broadcasts
+BROADCAST="3478 10001"
+EOF
+
+Open the Firewall in Yast ==> Allowed Services ==> Service to Allow ==> Unifi Controller (in the drop-down box) + Add ==> Next ==> Finish
+
 # Open browser and navigate to
 https://localhost:8443

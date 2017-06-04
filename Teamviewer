@@ -11,6 +11,4 @@ sudo zypper install ./teamviewer_12.0.76279.i686.rpm
 # Check service status
 systemctl status teamviewerd
 
-sudo systemctl start teamviewerd.service
-
 sudo systemctl enable teamviewerd.service

@@ -1,0 +1,44 @@
+# Download binaries
+wget -c https://www.ubnt.com/downloads/unifi/5.4.16/UniFi.unix.zip
+
+# Install mongoDB
+sudo zypper in mongodb-server
+
+# Add system account
+sudo useradd -r ubnt
+
+# Extract zip file to /opt
+sudo unzip -q UniFi.unix.zip -d /opt
+
+# Change directory permissions
+sudo chown -R ubnt:ubnt /opt/UniFi
+
+# Create a systemd file
+sudo tee -a /etc/systemd/system/unifi.service <<-EOF
+
+#
+# Systemd unit file for UniFi Controller
+#
+
+[Unit]
+Description=UniFi AP Web Controller
+After=syslog.target network.target
+
+[Service]
+Type=simple
+User=ubnt
+WorkingDirectory=/opt/UniFi
+ExecStart=/usr/bin/java -Xmx1024M -jar /opt/UniFi/lib/ace.jar start
+ExecStop=/usr/bin/java -jar /opt/UniFi/lib/ace.jar stop
+SuccessExitStatus=143
+
+
+[Install]
+WantedBy=multi-user.target
+EOF
+
+# Enable the service to start at boot time
+sudo systemctl enable unifi.service
+
+# Reload systemctl
+sudo systemctl daemon-reload

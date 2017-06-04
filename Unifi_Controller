@@ -2,13 +2,16 @@
 wget -c https://www.ubnt.com/downloads/unifi/5.4.16/UniFi.unix.zip
 
 # Install mongoDB
-sudo zypper in mongodb-server
+sudo zypper in mongodb
 
 # Add system account
-sudo useradd -r ubnt
+sudo useradd -r -U ubnt
 
 # Extract zip file to /opt
 sudo unzip -q UniFi.unix.zip -d /opt
+
+# Recreate symbolic link to mongoDB binary
+sudo ln -sf /usr/sbin/mongod /opt/UniFi/bin/
 
 # Change directory permissions
 sudo chown -R ubnt:ubnt /opt/UniFi
@@ -42,3 +45,6 @@ sudo systemctl enable unifi.service
 
 # Reload systemctl
 sudo systemctl daemon-reload
+
+# Open browser and navigate to
+https://localhost:8443

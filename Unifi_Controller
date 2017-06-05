@@ -52,7 +52,7 @@ sudo tee -a /etc/sysconfig/SuSEfirewall2.d/services/unifi <<-EOF
 ## Description: Open ports for Unifi Controller with broadcast allowed.
 
 # space separated list of allowed TCP ports
-TCP="8080 8443 8080 8843"
+TCP="8080 8443 8880 8843"
 
 # space separated list of allowed UDP ports
 UDP="3478 10001"

@@ -7,4 +7,7 @@ sudo zypper ref namtrac\:subpixel
 # Dup from repo
 sudo zypper dup --from namtrac\:subpixel
 
+# Install libfreetype6-32bit to work with Teamviewer rendering
+sudo zypper install libfreetype6-32bit
+
 # Configure in YaST Fonts the use of DejaVu

@@ -1,0 +1,10 @@
+# Add repository with modified libfreetype6
+sudo zypper ar -f http://download.opensuse.org/repositories/home:/namtrac:/subpixel/openSUSE_Factory/ namtrac:subpixel
+
+# Refresh this repo
+sudo zypper ref namtrac\:subpixel
+
+# Dup from repo
+sudo zypper dup --from namtrac\:subpixel
+
+# Configure in YaST Fonts the use of DejaVu

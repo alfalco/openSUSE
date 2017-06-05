@@ -1,0 +1,5 @@
+# Theme Arc KDE + Papirus Icons  - Add repository
+sudo zypper ar -f http://download.opensuse.org/repositories/home:/kill_it/openSUSE_Factory/ home:kill_it
+
+# Install packages
+sudo zypper in gtk2-metatheme-arc gtk3-metatheme-arc arc-kde-decoration arc-kde-konsole arc-kde-kvantum arc-kde-style papirus-icon-theme papirus-icon-theme-gtk papirus-icon-theme-kde libreoffice-icon-theme-papirus

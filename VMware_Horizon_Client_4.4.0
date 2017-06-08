@@ -1,5 +1,7 @@
 # Download VMware Horizon Client Installer
 wget -c https://download3.vmware.com/software/view/viewclients/CART17Q1/VMware-Horizon-Client-4.4.0-5167967.x64.bundle
+or
+wget -c https://download3.vmware.com/software/view/viewclients/CART17Q2/VMware-Horizon-Client-4.5.0-5650368.x64.bundle
 
 # Install libncurses5 and gtk libs
 
@@ -17,3 +19,7 @@ sudo ln -s libgstreamer-1.0.so.0.1004.0 libgstreamer-0.10.so.0
 # Run installer
 
 kdesu bash VMware-Horizon-Client-4.4.0-5167967.x64.bundle
+
+or
+
+kdesu bash VMware-Horizon-Client-4.5.0-5650368.x64.bundle

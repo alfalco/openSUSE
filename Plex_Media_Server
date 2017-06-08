@@ -5,6 +5,8 @@ or
 
 wget -c https://downloads.plex.tv/plex-media-server/1.5.6.3790-4613ce077/plexmediaserver-1.5.6.3790-4613ce077.x86_64.rpm
 
+# Soon, in future versions of openSUSE, the use of /etc/SuSE-release will be deprecated, instead of this use /etc/os-release
+# Meanwhile, use the following procedure:
 # Create a symbolic link required for preinstall script on rpm package
 sudo ln -s /etc/SUSE-brand /etc/SuSE-release
 

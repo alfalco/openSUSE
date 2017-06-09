@@ -23,3 +23,9 @@ kdesu bash VMware-Horizon-Client-4.4.0-5167967.x64.bundle
 or
 
 kdesu bash VMware-Horizon-Client-4.5.0-5650368.x64.bundle
+
+References:
+
+https://pubs.vmware.com/Release_Notes/en/horizon-client/45/horizon-client-linux-45-release-notes.html
+
+https://www.vmware.com/pdf/horizon-view/horizon-client-linux-45-document.pdf

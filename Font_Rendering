@@ -11,3 +11,4 @@ sudo zypper dup --from namtrac\:subpixel
 sudo zypper install libfreetype6-32bit
 
 # Configure in YaST Fonts the use of DejaVu
+Then, I used the YAST fonts module to enable font antialiasing, force hint style "hintslight", and rgb subpixel rendering with the "lcddefault" filter.

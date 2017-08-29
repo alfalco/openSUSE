@@ -1,5 +1,5 @@
 # Import key
-sudo rpm --import http://download.teamviewer.com/download/TeamViewer_Linux_PubKey.asc 
+sudo rpm --import https://download.teamviewer.com/download/linux/signature/TeamViewer2017.asc 
 
 # Download and Install package
 wget -c https://downloadus3.teamviewer.com/download/version_12x/teamviewer_12.0.76279.i686.rpm

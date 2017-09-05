@@ -3,9 +3,9 @@ wget -c https://download3.vmware.com/software/view/viewclients/CART17Q1/VMware-H
 or
 wget -c https://download3.vmware.com/software/view/viewclients/CART17Q2/VMware-Horizon-Client-4.5.0-5650368.x64.bundle
 
-# Install libncurses5 and gtk libs
+# Install libncurses5, gtk libs and libpng12
 
-sudo zypper in libncurses5 libgtkmm-2_4-1 libgtkmm-3_0-1
+sudo zypper in libncurses5 libgtkmm-2_4-1 libgtkmm-3_0-1 libpng12-0
 
 # Make symbolic links
 

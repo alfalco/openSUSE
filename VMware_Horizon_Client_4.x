@@ -10,11 +10,11 @@ sudo zypper in libncurses5 libgtkmm-2_4-1 libgtkmm-3_0-1
 # Make symbolic links
 
 cd /usr/lib64
-sudo ln -s libudev.so.1.6.5 libudev.so.0
+sudo ln -s libudev.so.1.6.6 libudev.so.0
 sudo ln -s libffi.so.7.1.0 libffi.so.5
-sudo ln -s libgstapp-1.0.so.0.1004.0 libgstapp-0.10.so.0
-sudo ln -s libgstbase-1.0.so.0.1004.0 libgstbase-0.10.so.0
-sudo ln -s libgstreamer-1.0.so.0.1004.0 libgstreamer-0.10.so.0
+sudo ln -s libgstapp-1.0.so.0.1202.0 libgstapp-0.10.so.0
+sudo ln -s libgstbase-1.0.so.0.1202.0 libgstbase-0.10.so.0
+sudo ln -s libgstreamer-1.0.so.0.1202.0 libgstreamer-0.10.so.0
 
 # Run installer
 

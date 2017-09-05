@@ -1,0 +1,22 @@
+#Installation from Adobe repository
+
+#Adobe is providing an RPM repository which is compatible with openSUSE and SUSE Linux Enterprise.
+
+#To enable this repository on your system, in a terminal, run (you will be prompted for root password):
+
+sudo zypper ar --check --refresh http://linuxdownload.adobe.com/linux/x86_64/ adobe
+
+#This adds the repository. Now use
+
+sudo zypper se -s -r adobe
+
+#To see the packages provided by this repo. There are two packages: the flash plugin itself and a package named adobe-release-x86_64. It is recommended that you first install this additional package and add the repo's key then:
+
+sudo zypper in adobe-release-x86_64 #Signature verification failed - Ignore to continue installation
+sudo rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-adobe-linux
+
+#Then, to install Adobe Flash Player rpm package, run:
+
+sudo zypper in flash-plugin
+
+#You'll need to restart Mozilla Firefox browser to make it detect Flash plugin.

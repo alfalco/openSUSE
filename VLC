@@ -5,7 +5,7 @@ sudo zypper ar -f http://download.videolan.org/pub/vlc/SuSE/Tumbleweed/ VLC
 sudo zypper ref VLC
 
 # Dist-Upgrade from VLC
-sudo zypper dup --from VLC
+sudo zypper dup --from VLC --allow-vendor-change
 
 # Install player and dependencies
 sudo zypper in vlc vlc-codecs

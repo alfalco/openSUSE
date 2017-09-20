@@ -2,7 +2,7 @@
 sudo rpm --import https://download.teamviewer.com/download/linux/signature/TeamViewer2017.asc 
 
 # Download and Install package
-wget -c https://downloadus3.teamviewer.com/download/version_12x/teamviewer_12.0.76279.i686.rpm
+wget -c https://dl.tvcdn.de/download/version_12x/teamviewer_12.0.76279.i686.rpm
 
 sudo zypper install ./teamviewer_12.0.76279.i686.rpm
 

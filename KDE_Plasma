@@ -3,3 +3,33 @@ sudo zypper ar -f http://download.opensuse.org/repositories/home:/kill_it/openSU
 
 # Install packages
 sudo zypper in gtk2-metatheme-arc gtk3-metatheme-arc arc-kde-decoration arc-kde-konsole arc-kde-kvantum arc-kde-style papirus-icon-theme papirus-icon-theme-gtk papirus-icon-theme-kde libreoffice-icon-theme-papirus
+
+# Create a file: /etc/X11/xorg.conf.d/20-nvidia.conf
+
+# /etc/X11/xorg.conf.d/20-nvidia.conf
+#
+Section "Device"
+        Identifier "Nvidia Card"
+        VendorName "NVIDIA Corporation"
+        Driver "nvidia"
+        Option "NoLogo" "true"
+        Option "Stereo" "0"
+        Option "metamodes" "nvidia-auto-select +0+0 {ForceCompositionPipeline=On, ForceFullCompositionPipeline=On}"
+        Option "AllowIndirectGLXProtocol" "off"
+        Option "TripleBuffer" "On"
+        Option "DPI" "96 x 96"
+        Option "SLI" "Off"
+        Option "MultiGPU" "Off"
+        Option "BaseMosaic" "off"
+EndSection
+
+# Create a directory and put this script inside:
+
+mkdir -p ~/.config/plasma-workspace/env/
+
+~/.config/plasma-workspace/env/kwin_env.sh
+
+#!/bin/sh
+export KWIN_TRIPLE_BUFFER=1
+
+# In Settings -> Display and Monitor -> Compositor, change Rendering Backend to OpenGL 3.1 and in Tearing Prevention ("vsync"), select Never.

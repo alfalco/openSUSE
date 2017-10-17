@@ -19,3 +19,6 @@ chmod +x ./VMware-Workstation-14.0.0-6661328.x86_64.bundle
  
 # Run Installer
 kdesu ./VMware-Workstation-14.0.0-6661328.x86_64.bundle
+
+# To test:
+# https://communities.vmware.com/message/2707452#2707452

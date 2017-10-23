@@ -27,10 +27,10 @@ EndSection
 
 mkdir -p ~/.config/plasma-workspace/env/
 
-~/.config/plasma-workspace/env/kwin_env.sh
-
+sudo tee -a ~/.config/plasma-workspace/env/kwin_env.sh <<-EOF
 #!/bin/sh
 export KWIN_TRIPLE_BUFFER=1
+EOF
 
 # In Settings -> Display and Monitor -> Compositor, change Rendering Backend to OpenGL 3.1 and in Tearing Prevention ("vsync"), select Never.
 

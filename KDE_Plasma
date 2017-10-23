@@ -33,3 +33,5 @@ mkdir -p ~/.config/plasma-workspace/env/
 export KWIN_TRIPLE_BUFFER=1
 
 # In Settings -> Display and Monitor -> Compositor, change Rendering Backend to OpenGL 3.1 and in Tearing Prevention ("vsync"), select Never.
+
+https://www.reddit.com/r/kde/comments/6b6793/how_do_i_hide_window_decorations_of_maximized/?st=j944g6rv&sh=49bae999

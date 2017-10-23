@@ -4,6 +4,8 @@ sudo zypper ar -f http://download.opensuse.org/repositories/home:/kill_it/openSU
 # Install packages
 sudo zypper in gtk2-metatheme-arc gtk3-metatheme-arc arc-kde-decoration arc-kde-konsole arc-kde-kvantum arc-kde-style papirus-icon-theme papirus-icon-theme-gtk papirus-icon-theme-kde libreoffice-icon-theme-papirus
 
+sudo zypper in kvantum-qt4 kvantum-qt4-32bit kvantum-qt5 kvantum-qt5-32bit kvantum-qt5-manager kvantum-themes
+
 # Create a file: /etc/X11/xorg.conf.d/20-nvidia.conf
 
 # /etc/X11/xorg.conf.d/20-nvidia.conf

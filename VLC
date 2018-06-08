@@ -1,24 +1,22 @@
 # Add repository
 sudo zypper ar -f http://download.videolan.org/pub/vlc/SuSE/Tumbleweed/ VLC
 
-# Sync repository
-sudo zypper ref VLC
+# Sync repository and import GPG Keys
+sudo zypper -n --gpg-auto-import-keys ref VLC
 
 # Dist-Upgrade from VLC
-sudo zypper dup --from VLC --allow-vendor-change
-
+sudo zypper dup --from VLC --allow-vendor-change --no-confirm
 Loading repository data...
 Reading installed packages...
 Computing distribution upgrade...
 
+The following NEW package is going to be installed:
+  libzvbi0
+
 The following 11 packages are going to be upgraded:
   libavcodec57 libavdevice57 libavfilter6 libavformat57 libavresample3 libavutil55 libmad0 libpostproc54 libswresample2 libswscale4 libtwolame0
 
-The following 2 packages are going to be downgraded:
-  lame libmp3lame0
-
-The following 13 packages are going to change vendor:
-  lame            openSUSE -> VideoLAN Project (http://www.videolan.org)
+The following 11 packages are going to change vendor:
   libavcodec57    openSUSE -> VideoLAN Project (http://www.videolan.org)
   libavdevice57   openSUSE -> VideoLAN Project (http://www.videolan.org)
   libavfilter6    openSUSE -> VideoLAN Project (http://www.videolan.org)
@@ -26,15 +24,14 @@ The following 13 packages are going to change vendor:
   libavresample3  openSUSE -> VideoLAN Project (http://www.videolan.org)
   libavutil55     openSUSE -> VideoLAN Project (http://www.videolan.org)
   libmad0         openSUSE -> VideoLAN Project (http://www.videolan.org)
-  libmp3lame0     openSUSE -> VideoLAN Project (http://www.videolan.org)
   libpostproc54   openSUSE -> VideoLAN Project (http://www.videolan.org)
   libswresample2  openSUSE -> VideoLAN Project (http://www.videolan.org)
   libswscale4     openSUSE -> VideoLAN Project (http://www.videolan.org)
   libtwolame0     openSUSE -> VideoLAN Project (http://www.videolan.org)
 
-11 packages to upgrade, 2 to downgrade, 13  to change vendor.
-Overall download size: 6.6 MiB. Already cached: 0 B. After the operation, additional 6.8 MiB will be used.
-Continue? [y/n/...? shows all options] (y): 
+11 packages to upgrade, 1 new, 11  to change vendor.
+Overall download size: 6.6 MiB. Already cached: 0 B. After the operation, additional 7.1 MiB will be used.
+Continue? [y/n/...? shows all options] (y): y
 
 # Install player and dependencies
 sudo zypper in vlc vlc-codecs

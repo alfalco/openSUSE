@@ -1,8 +1,74 @@
-# Clone project from GitHub
-git clone https://github.com/cornguo/opensuse-spotify-installer
+# Add repository for Spotify
+sudo zypper ar -f https://download.opensuse.org/repositories/home:/megamaced:/spotify-easyrpm/openSUSE_Tumbleweed/ spotify-easyrpm
+ 
+# Refresh and import GPG Keys
+sudo zypper -n --gpg-auto-import-keys ref spotify-easyrpm
 
-# Enter in directory
-cd opensuse-spotify-installer
+# Install package
+sudo zypper in --no-confirm spotify-easyrpm
 
-# Execute install script
-./install-spotify.sh
+#Execute script to install Spotify Client
+spotify-easyrpm
+
+After download the .deb file, extract and repackage to .rpm, needs a confirmation of installation and the root password to install.
+
+#Example of output:
+
+
+┌─┐┌─┐┌─┐┌┬┐┬┌─┐┬ ┬   ┌─┐┌─┐┌─┐┬ ┬┬─┐┌─┐┌┬┐
+└─┐├─┘│ │ │ │├┤ └┬┘───├┤ ├─┤└─┐└┬┘├┬┘├─┘│││
+└─┘┴  └─┘ ┴ ┴└   ┴    └─┘┴ ┴└─┘ ┴ ┴└─┴  ┴ ┴
+
+VERSION: 1.1.4
+SUPPORT: https://github.com/megamaced/spotify-easyrpm/issues
+The latest openSUSE Leap, Tumbleweed or SLE are supported only
+
+MODE: prompt
+Creating build dirs in /home/alfalco/rpmbuild
+Creating /home/alfalco/.rpmmacros
+Comparing debian repo version to installed or local machine repo version (if any)
+find: ‘/var/cache/spotify-easyrpm’: No such file or directory
+Downloading the latest Spotify deb
+--2018-06-08 11:18:23--  http://repository.spotify.com/pool/non-free/s/spotify-client//spotify-client_1.0.80.480.g51b03ac3-13_amd64.deb
+Resolving repository.spotify.com (repository.spotify.com)... 13.32.81.226, 13.32.81.28, 13.32.81.188, ...
+Connecting to repository.spotify.com (repository.spotify.com)|13.32.81.226|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 97542898 (93M) [application/octet-stream]
+Saving to: ‘/home/alfalco/rpmbuild/SOURCES/spotify-client_1.0.80.480.g51b03ac3-13_amd64.deb’
+
+spotify-client_1.0.80.480.g51b03ac3-13_amd64.deb                    100%[==================================================================================================================================================================>]  93.02M   660KB/s    in 3m 31s  
+
+2018-06-08 11:21:55 (451 KB/s) - ‘/home/alfalco/rpmbuild/SOURCES/spotify-client_1.0.80.480.g51b03ac3-13_amd64.deb’ saved [97542898/97542898]
+
+Extracting deb and preparing
+Preparing RPM src tarball
+Writing new build file
+Running rpm build
+Spotify RPM created in /home/alfalco/rpmbuild/RPMS/x86_64/
+Do you wish to install the Spotify RPM (y/n)?y
+Installing spotify-client-1.0.80.480.g51b03ac3
+[sudo] password for root: 
+Loading repository data...
+Reading installed packages...
+Resolving package dependencies...
+
+The following NEW package is going to be installed:
+  spotify-client
+
+1 new package to install.
+Overall download size: 68.1 MiB. Already cached: 0 B. After the operation, additional 219.5 MiB will be used.
+Continue? [y/n/...? shows all options] (y): y
+Retrieving package spotify-client-1.0.80.480.g51b03ac3-0.x86_64                                                                                                                                                                           (1/1),  68.1 MiB (219.5 MiB unpacked)
+spotify-client-1.0.80.480.g51b03ac3-0.x86_64.rpm:
+    Package is not signed!
+spotify-client-1.0.80.480.g51b03ac3-0.x86_64 (Plain RPM files cache): Signature verification failed [6-File is unsigned]
+Accepting package despite the error. (--no-gpg-checks)
+
+Checking for file conflicts: ............................................................................................................................................................................................................................................[done]
+(1/1) Installing: spotify-client-1.0.80.480.g51b03ac3-0.x86_64 ..........................................................................................................................................................................................................[done]
+Checking for an existing schedule
+no crontab for alfalco
+Do you wish to set up an automated update schedule (y/n)?n
+Ok skipping...If you want to create this in the future just run spotify-easyrpm -create-schedule
+Cleaning up
+done

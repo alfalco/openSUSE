@@ -1,11 +1,8 @@
 # Import key
-sudo rpm --import https://download.teamviewer.com/download/linux/signature/TeamViewer2017.asc 
+sudo rpm --import http://linux.teamviewer.com/pubkey/TeamViewer2017.asc
 
-# Download and Install package
-wget -c https://dl.tvcdn.de/download/version_12x/teamviewer_12.0.85001.i686.rpm
-
-sudo zypper install ./teamviewer_12.0.85001.i686.rpm
-# Confirm dependencies with "y"
+# Install package
+sudo zypper in --no-confirm https://download.teamviewer.com/download/linux/teamviewer-suse.$(uname -i).rpm
 
 # Check service status
 systemctl status teamviewerd

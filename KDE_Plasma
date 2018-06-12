@@ -36,4 +36,9 @@ EOF
 
 # In Settings -> Display and Monitor -> Compositor, change Rendering Backend to OpenGL 3.1 and in Tearing Prevention ("vsync"), select Never.
 
+# Configure kwin to remove Alt + Tab delay:
+
+$ kwriteconfig5 --file ~/.config/kwinrc --group TabBox --key DelayTime 0
+$ qdbus org.kde.KWin /KWin reconfigure    
+
 https://www.reddit.com/r/kde/comments/6b6793/how_do_i_hide_window_decorations_of_maximized/?st=j944g6rv&sh=49bae999

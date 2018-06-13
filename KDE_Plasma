@@ -39,6 +39,12 @@ EOF
 # Configure kwin to remove Alt + Tab delay:
 
 $ kwriteconfig5 --file ~/.config/kwinrc --group TabBox --key DelayTime 0
-$ qdbus org.kde.KWin /KWin reconfigure    
+$ qdbus org.kde.KWin /KWin reconfigure
+
+# Restart plasmashell to solve GUI problems
+
+Alt+F2
+kquitapp5 plasmashell && kstart plasmashell
+Enter
 
 https://www.reddit.com/r/kde/comments/6b6793/how_do_i_hide_window_decorations_of_maximized/?st=j944g6rv&sh=49bae999

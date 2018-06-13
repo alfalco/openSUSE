@@ -1,0 +1,22 @@
+#Download the source code from https://github.com/plexinc/plex-media-player/releases and put them on /usr/src/
+
+wget -c https://github.com/plexinc/plex-media-player/archive/v2.12.0.869-010a1af4.tar.gz -P /usr/src/
+
+# Install dependencies in order to compile this software
+
+zypper in --no-confirm cmake ninja gcc gcc-c++ mpv mpv-devel libdrm-devel Mesa-libGL-devel libSDL2-devel libcec-devel libappstream-glib8 desktop-file-utils libqt5-qtbase-devel libqt5-qtdeclarative-devel libqt5-qtwebchannel-devel libqt5-qtwebengine-devel libqt5-qtx11extras-devel
+
+#Extract the source code and change directory
+
+cd /usr/src
+tar xvf v2.12.0.869-010a1af4.tar.gz
+cd plex-media-player-2.12.0.869-010a1af4
+
+#Compile the project
+
+mkdir build
+cd build
+#cmake -DCMAKE_BUILD_TYPE=Debug -DQTROOT=/ -DCMAKE_INSTALL_PREFIX=/usr/local/ ..
+cmake -GNinja -DCMAKE_BUILD_TYPE=RelWithDebInfo -DQTROOT=/usr/lib64/qt5 -DMPV_INCLUDE_DIR=/usr/include/mpv -DMPV_LIBRARY=/usr/lib64/libmpv.so.1 -DLINUX_DBUS=ON -DCMAKE_INSTALL_PREFIX=/usr ..
+make -j4
+sudo make install

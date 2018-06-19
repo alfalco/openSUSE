@@ -1,6 +1,6 @@
 #Download the source code from https://github.com/plexinc/plex-media-player/releases and put them on /usr/src/
 
-wget -c https://github.com/plexinc/plex-media-player/archive/v2.12.0.869-010a1af4.tar.gz -P /usr/src/
+wget -c https://github.com/plexinc/plex-media-player/archive/v2.12.1.871-6c71195e.tar.gz -P /usr/src/
 
 # Install dependencies in order to compile this software
 
@@ -9,8 +9,8 @@ zypper in --no-confirm cmake ninja gcc gcc-c++ mpv mpv-devel libdrm-devel Mesa-l
 #Extract the source code and change directory
 
 cd /usr/src
-tar xvf v2.12.0.869-010a1af4.tar.gz
-cd plex-media-player-2.12.0.869-010a1af4
+tar xvf v2.12.1.871-6c71195e.tar.gz
+cd plex-media-player-2.12.1.871-6c71195e
 
 #Compile the project
 

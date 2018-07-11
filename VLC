@@ -43,5 +43,5 @@ The following 15 packages are going to change vendor:
 Overall download size: 17.7 MiB. Already cached: 0 B. After the operation, additional 10.6 MiB will be used.
 Continue? [y/n/...? shows all options] (y): y
 
-# Install player and dependencies
+# Confirm and install player and dependencies, if necessary
 sudo zypper in vlc vlc-codecs

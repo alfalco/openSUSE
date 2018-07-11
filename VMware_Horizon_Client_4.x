@@ -1,5 +1,5 @@
 # Download VMware Horizon Client Installer
-wget -c https://download3.vmware.com/software/view/viewclients/CART19FQ2/VMware-Horizon-Client-4.8.0-8518891.x64.bundle
+wget -c https://download3.vmware.com/software/view/viewclients/CART19FQ2/VMware-Horizon-Client-4.8.0-8518891.x64.bundle -P Downloads/
 
 # Install libncurses5, gtk libs and libpng12
 sudo zypper in libncurses5 libgtkmm-2_4-1 libgtkmm-3_0-1 libpng12-0

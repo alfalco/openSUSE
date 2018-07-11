@@ -1,0 +1,5 @@
+sudo zypper inr
+
+sudo zypper dup
+
+sudo zypper in screenfetch htop pulseaudio-equalizer fuse-exfat exfat-utils icedtea-web tmux nmap ipcalc

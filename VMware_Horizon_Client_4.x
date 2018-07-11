@@ -14,7 +14,7 @@ sudo ln -s libgstreamer-1.0.so.0.1401.0 libgstreamer-0.10.so.0
 cd -
 
 # Run installer
-kdesu bash VMware-Horizon-Client-4.8.0-8518891.x64.bundle
+kdesu bash Downloads/VMware-Horizon-Client-4.8.0-8518891.x64.bundle
 
 References:
 

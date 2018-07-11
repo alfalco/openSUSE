@@ -6,31 +6,41 @@ sudo zypper -n --gpg-auto-import-keys ref VLC
 
 # Dist-Upgrade from VLC
 sudo zypper dup --from VLC --allow-vendor-change --no-confirm
+Retrieving repository 'openSUSE-Tumbleweed-Non-Oss' metadata ............................................................................................................................................................................................................[done]
+Building repository 'openSUSE-Tumbleweed-Non-Oss' cache .................................................................................................................................................................................................................[done]
+Retrieving repository 'openSUSE-Tumbleweed-Oss' metadata ................................................................................................................................................................................................................[done]
+Building repository 'openSUSE-Tumbleweed-Oss' cache .....................................................................................................................................................................................................................[done]
+Retrieving repository 'openSUSE-Tumbleweed-Update' metadata .............................................................................................................................................................................................................[done]
+Building repository 'openSUSE-Tumbleweed-Update' cache ..................................................................................................................................................................................................................[done]
 Loading repository data...
 Reading installed packages...
 Computing distribution upgrade...
 
-The following NEW package is going to be installed:
-  libzvbi0
+The following 10 NEW packages are going to be installed:
+  libcodec2-0_6 libdca0 libdvdcss2 libfaad2 libfdk-aac1 libpostproc55 libx264-152 libx265-151 vlc-codecs vlc-vdpau
 
-The following 11 packages are going to be upgraded:
-  libavcodec57 libavdevice57 libavfilter6 libavformat57 libavresample3 libavutil55 libmad0 libpostproc54 libswresample2 libswscale4 libtwolame0
+The following 15 packages are going to be upgraded:
+  libavcodec58 libavformat58 libavutil56 libmad0 libmpeg2-0 libswresample3 libswscale5 libtwolame0 libvlc5 libvlccore9 vlc vlc-codec-gstreamer vlc-lang vlc-noX vlc-qt
 
-The following 11 packages are going to change vendor:
-  libavcodec57    openSUSE -> VideoLAN Project (http://www.videolan.org)
-  libavdevice57   openSUSE -> VideoLAN Project (http://www.videolan.org)
-  libavfilter6    openSUSE -> VideoLAN Project (http://www.videolan.org)
-  libavformat57   openSUSE -> VideoLAN Project (http://www.videolan.org)
-  libavresample3  openSUSE -> VideoLAN Project (http://www.videolan.org)
-  libavutil55     openSUSE -> VideoLAN Project (http://www.videolan.org)
-  libmad0         openSUSE -> VideoLAN Project (http://www.videolan.org)
-  libpostproc54   openSUSE -> VideoLAN Project (http://www.videolan.org)
-  libswresample2  openSUSE -> VideoLAN Project (http://www.videolan.org)
-  libswscale4     openSUSE -> VideoLAN Project (http://www.videolan.org)
-  libtwolame0     openSUSE -> VideoLAN Project (http://www.videolan.org)
+The following 15 packages are going to change vendor:
+  libavcodec58         openSUSE -> VideoLAN Project (http://www.videolan.org)
+  libavformat58        openSUSE -> VideoLAN Project (http://www.videolan.org)
+  libavutil56          openSUSE -> VideoLAN Project (http://www.videolan.org)
+  libmad0              openSUSE -> VideoLAN Project (http://www.videolan.org)
+  libmpeg2-0           openSUSE -> VideoLAN Project (http://www.videolan.org)
+  libswresample3       openSUSE -> VideoLAN Project (http://www.videolan.org)
+  libswscale5          openSUSE -> VideoLAN Project (http://www.videolan.org)
+  libtwolame0          openSUSE -> VideoLAN Project (http://www.videolan.org)
+  libvlc5              openSUSE -> VideoLAN Project (http://www.videolan.org)
+  libvlccore9          openSUSE -> VideoLAN Project (http://www.videolan.org)
+  vlc                  openSUSE -> VideoLAN Project (http://www.videolan.org)
+  vlc-codec-gstreamer  openSUSE -> VideoLAN Project (http://www.videolan.org)
+  vlc-lang             openSUSE -> VideoLAN Project (http://www.videolan.org)
+  vlc-noX              openSUSE -> VideoLAN Project (http://www.videolan.org)
+  vlc-qt               openSUSE -> VideoLAN Project (http://www.videolan.org)
 
-11 packages to upgrade, 1 new, 11  to change vendor.
-Overall download size: 6.6 MiB. Already cached: 0 B. After the operation, additional 7.1 MiB will be used.
+15 packages to upgrade, 10 new, 15  to change vendor.
+Overall download size: 17.7 MiB. Already cached: 0 B. After the operation, additional 10.6 MiB will be used.
 Continue? [y/n/...? shows all options] (y): y
 
 # Install player and dependencies

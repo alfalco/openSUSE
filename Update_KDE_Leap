@@ -10,4 +10,4 @@ sudo zypper ar -f http://download.opensuse.org/repositories/KDE:/Qt5/openSUSE_Le
 
 # And dist-upgrade
 
-sudo zypper --allow-vendor-change dup --from KDE-Applications --from KDE-Extra --from KF5 --from Qt5
+sudo zypper dup --from KDE-Applications --from KDE-Extra --from KF5 --from Qt5 --allow-vendor-change

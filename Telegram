@@ -10,7 +10,7 @@
 # Execute with your user:
 
 $ telegram-client
-$ sed -i "s/--/telegram-client/" .local/share/applications/telegramdesktop.desktop
+$ sed -i 's|/opt/Telegram/Telegram|/usr/bin/telegram-client|g' .local/share/applications/telegramdesktop.desktop
 $ update-desktop-database $HOME/.local/share/applications/
 
 ### Package Installation ###

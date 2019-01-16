@@ -2,8 +2,8 @@
 
 # Execute with root:
 
-# wget "https://updates.tdesktop.com/tlinux/tsetup.1.3.9.tar.xz" -O telegram.tar.xz
-# tar Jxvf telegram.tar.xz -C /opt/
+# wget -c "https://updates.tdesktop.com/tlinux/tsetup.1.5.4.tar.xz" -O /usr/src/telegram.tar.xz
+# tar Jxvf /usr/src/telegram.tar.xz -C /opt/
 # ln -s /opt/Telegram/Telegram /usr/bin/telegram-client
 # ln -s /opt/Telegram/Updater /usr/bin/telegram-updater
 

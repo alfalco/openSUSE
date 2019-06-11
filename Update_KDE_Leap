@@ -1,12 +1,12 @@
 # Add this repositories:
 
-sudo zypper ar -f http://download.opensuse.org/repositories/KDE:/Applications/KDE_Frameworks5_openSUSE_Leap_15.0/ KDE-Applications 
+sudo zypper ar -f http://download.opensuse.org/repositories/KDE:/Applications/KDE_Frameworks5_openSUSE_Leap_15.1/ KDE-Applications 
  
-sudo zypper ar -f http://download.opensuse.org/repositories/KDE:/Extra/openSUSE_Leap_15.0/ KDE-Extra 
+sudo zypper ar -f http://download.opensuse.org/repositories/KDE:/Extra/openSUSE_Leap_15.1/ KDE-Extra 
  
-sudo zypper ar -f http://download.opensuse.org/repositories/KDE:/Frameworks5/openSUSE_Leap_15.0/ KF5 
+sudo zypper ar -f http://download.opensuse.org/repositories/KDE:/Frameworks5/openSUSE_Leap_15.1/ KF5 
  
-sudo zypper ar -f http://download.opensuse.org/repositories/KDE:/Qt5/openSUSE_Leap_15.0/ Qt5
+sudo zypper ar -f http://download.opensuse.org/repositories/KDE:/Qt5/openSUSE_Leap_15.1/ Qt5
 
 # Refresh repositories
 

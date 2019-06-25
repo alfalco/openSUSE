@@ -6,6 +6,8 @@
 
 sudo zypper ar --check --refresh http://linuxdownload.adobe.com/linux/x86_64/ adobe
 
+sudo zypper mr --gpgcheck-allow-unsigned-repo adobe
+
 #This adds the repository. Now use
 
 sudo zypper se -s -r adobe

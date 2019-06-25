@@ -44,7 +44,7 @@ $ qdbus-qt5 org.kde.KWin /KWin reconfigure
 # Restart plasmashell to solve GUI problems
 
 Alt+F2
-kquitapp5 plasmashell && kstart plasmashell
+kquitapp5 plasmashell && kstart5 plasmashell
 Enter
 
 https://www.reddit.com/r/kde/comments/6b6793/how_do_i_hide_window_decorations_of_maximized/?st=j944g6rv&sh=49bae999

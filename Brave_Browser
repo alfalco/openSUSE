@@ -1,0 +1,7 @@
+sudo zypper ar -f https://brave-browser-rpm-release.s3.brave.com/x86_64/ brave-browser
+
+sudo zypper mr --gpgcheck-allow-unsigned-repo brave-browser
+
+sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
+
+sudo zypper in brave-browser

@@ -19,6 +19,8 @@ sudo zypper se -s -r adobe
 sudo zypper in adobe-release-x86_64 #Signature verification failed - Ignore to continue installation
 sudo rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-adobe-linux
 
+sudo zypper mr --gpgcheck adobe
+
 #Then, to install Adobe Flash Player rpm package, run:
 
 sudo zypper in flash-plugin

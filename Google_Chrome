@@ -9,4 +9,3 @@ sudo zypper ar -f http://dl.google.com/linux/chrome/rpm/stable/x86_64/ google-ch
 # Install Google Chrome Stable:
 
 sudo zypper in google-chrome-stable
-

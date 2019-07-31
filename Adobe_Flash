@@ -8,16 +8,9 @@ sudo zypper ar --check --refresh http://linuxdownload.adobe.com/linux/x86_64/ ad
 
 sudo zypper mr --no-gpgcheck adobe
 
-sudo zypper mr --gpgcheck-allow-unsigned-repo adobe
+sudo zypper in adobe-release-x86_64
 
-#This adds the repository. Now use
-
-sudo zypper se -s -r adobe
-
-#To see the packages provided by this repo. There are three packages: the flash plugin itself, the flash player and a package named adobe-release-x86_64. It is recommended that you first install this additional package and add the repo's key then:
-
-sudo zypper in adobe-release-x86_64 #Signature verification failed - Ignore to continue installation
-sudo rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-adobe-linux
+sudo rpmkeys --import /etc/pki/rpm-gpg/RPM-GPG-KEY-adobe-linux
 
 sudo zypper mr --gpgcheck adobe
 

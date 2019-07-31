@@ -1,5 +1,5 @@
 # Import key
-sudo rpm --import http://linux.teamviewer.com/pubkey/TeamViewer2017.asc
+sudo rpmkeys --import http://linux.teamviewer.com/pubkey/TeamViewer2017.asc
 
 # Install package
 sudo zypper in --no-confirm https://download.teamviewer.com/download/linux/teamviewer-suse.$(uname -i).rpm

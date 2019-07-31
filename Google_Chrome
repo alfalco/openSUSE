@@ -1,6 +1,6 @@
 # Import signing key from Google
 
-sudo rpm --import https://dl.google.com/linux/linux_signing_key.pub
+sudo rpmkeys --import https://dl.google.com/linux/linux_signing_key.pub
 
 # Add repository:
 

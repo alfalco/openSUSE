@@ -2,4 +2,8 @@ sudo zypper inr
 
 sudo zypper dup
 
-sudo zypper in screenfetch neofetch htop gstreamer-plugins-bad libva-utils ffmpeg-4 lame gstreamer-plugins-bad gstreamer-plugins-ugly gstreamer-plugins-libav fuse-exfat exfat-utils icedtea-web tmux nmap ipcalc pv at papirus-icon-theme nethogs iptraf-ng mtr ncdu lsb
+#In KDE Plasma
+sudo zypper in screenfetch neofetch htop libva-utils ffmpeg-4 lame gstreamer-plugins-bad gstreamer-plugins-ugly gstreamer-plugins-libav fuse-exfat exfat-utils icedtea-web tmux nmap ipcalc pv at papirus-icon-theme nethogs iptraf-ng mtr ncdu lsb
+
+#In Gnome
+sudo zypper in screenfetch neofetch htop libva-utils ffmpeg-4 lame fuse-exfat exfat-utils icedtea-web tmux nmap ipcalc pv at papirus-icon-theme nethogs iptraf-ng mtr ncdu lsb gtk2-metatheme-arc gtk3-metatheme-arc hack-fonts
